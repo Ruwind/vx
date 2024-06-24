@@ -194,7 +194,7 @@ const ipTool = {
     }
     let binCode = parseInt(code.toString(2), 10).toString();
     for (let i = 0; i < binCode.length; i++) {
-      result += (binCode[i] === 0 ? 1 : 0);
+      result += (parseInt(binCode[i]) === 0 ? 1 : 0);
     }
     return flag === true ? result : parseInt(result, 2);
   },

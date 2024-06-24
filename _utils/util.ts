@@ -1,3 +1,7 @@
+/**
+ * 生成uuid
+ * return {string}
+ */
 export function guid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
     let r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
@@ -7,6 +11,7 @@ export function guid() {
 
 /**
  * 管道处理
+ * return {any}
  */
 export function pipe(res:any) {
   const args = [].slice.call(arguments, 0);
